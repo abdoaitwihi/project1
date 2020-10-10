@@ -1,0 +1,16 @@
+.my-banner {
+   height: calc(100vh - 50px);
+   h1 {
+      font-family: "arial nova bold";
+   }
+}
+.decouvrir {
+   h1 {
+      font-size: var(--h1-home);
+   }
+}
+.decouvrir-2 {
+   .content-video {
+      top: 20%;
+   }
+}

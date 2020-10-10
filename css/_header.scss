@@ -1,0 +1,99 @@
+@media only screen and (min-width: 992px) {
+   .languge-button {
+      order: 3;
+   }
+}
+.menu_fixed {
+   position: fixed;
+   z-index: 9999 !important;
+   width: 100%;
+   background-color: black;
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+   top: 0;
+   padding-bottom: 10px !important;
+   .navbar-brand img {
+      height: 60px;
+   }
+}
+.navbar-brand {
+   img {
+      width: 90px;
+   }
+}
+nav ul {
+   border-bottom: solid 1px var(--main-color);
+}
+
+nav ul .nav-link {
+   color: var(--main-color) !important;
+   padding-bottom: 20px;
+   margin-right: 5px;
+   margin-left: 5px;
+   padding-top: 20px;
+   padding-left: 15px !important;
+   padding-right: 15px !important;
+   transform: translateY(2.5px);
+   border-bottom: solid 4px transparent;
+   &:hover {
+      border-bottom: solid 4px var(--sec-color);
+   }
+}
+.active a {
+   @extend .nav-link:hover;
+}
+header {
+   background: url("../assets/img/home/activite-Tour-en-Montgolfier.png");
+   background-size: 110% 130%;
+   background-position: center;
+   background-repeat: no-repeat;
+   @media only screen and (max-width: 992px) {
+      background-size: cover;
+   }
+}
+.languge-button {
+   .btn {
+      color: var(--main-color) !important;
+   }
+}
+.banner {
+   height: calc(100vh - 50px);
+}
+header .btn-home {
+   color: var(--main-color);
+   background-color: transparent;
+
+   border-radius: 50px;
+   border: solid 2px var(--main-color);
+   transition: 0.3s;
+   font-size: var(--h3-size);
+   &:hover {
+      border: solid 2px var(--sec-color);
+      color: var(--sec-color);
+   }
+}
+
+header h1 {
+   font-size: var(--h1-home);
+   font-family: "arial nova";
+   color: var(--main-color);
+}
+header h3 {
+   font-size: var(--h3-home);
+   font-family: "arial nova light";
+   color: var(--main-color);
+}
+.no-header-bg {
+   background: white;
+   nav ul .nav-link {
+      color: black !important;
+   }
+   .languge-button button {
+      color: black !important;
+   }
+   nav ul {
+      border-bottom: solid 1px black;
+   }
+   .menu_fixed {
+      background-color: white;
+   }
+}

@@ -1,0 +1,236 @@
+.bg-1 {
+   background: linear-gradient(#1f0a12, #1f0a1270);
+}
+.content-video {
+   position: absolute;
+   top: 30%;
+   right: 50%;
+   transform: translate(50%, -50%);
+   display: inline;
+   h4 {
+      font-size: var(--h1-size);
+      font-family: "arial nova bold";
+   }
+   button {
+      background: none;
+      border: none;
+      img {
+         width: 50px;
+      }
+      &:focus {
+         outline: none;
+      }
+   }
+}
+#myVideo {
+   position: relative;
+   width: 100%;
+}
+
+button.lire-suite {
+   display: block;
+   border: noe;
+   border: none;
+   background: none;
+   margin-top: 10px;
+   border-bottom: solid 1px var(--sec-color);
+   padding-bottom: 10px;
+   &:focus {
+      outline: none;
+   }
+}
+a.lire-suite {
+   @extend button.lire-suite;
+   display: inline;
+}
+.line-under {
+   position: relative;
+   display: inline;
+   font-family: "arial nova bold";
+}
+.line-under::after {
+   content: "";
+   height: 4px;
+   width: 90px;
+   background-color: var(--sec-color);
+   display: block;
+   margin-top: 12px;
+   position: absolute;
+   left: 0;
+}
+.bg-2 {
+   background-image: url("../assets/img/home/activite-sortie-en-quad.png");
+}
+.clean-a img {
+   width: 30px !important;
+   display: inline !important;
+}
+.single-offre {
+   height: 430px;
+   border-radius: 6px;
+   overflow: hidden;
+   p {
+      font-size: 14px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+   }
+   h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+   a {
+      color: white;
+      font-size: 14px;
+      border: solid 1px white;
+      padding-top: 5px;
+      padding-bottom: 6px;
+      padding-left: 2px;
+      padding-right: 9px;
+      border-radius: 42px;
+      transition: 0.2s;
+      &:hover {
+         border: solid 1px var(--sec-color);
+         color: var(--sec-color);
+         text-decoration: none;
+      }
+   }
+   &:hover .overlay {
+      opacity: 1;
+   }
+}
+.owl-top .single-offre {
+   height: 300px;
+}
+.overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 6px;
+   background: linear-gradient(rgb(112, 104, 104), rgba(0, 0, 0, 0.349));
+   opacity: 0;
+   transition: 0.2s;
+   &:hover {
+      opacity: 1;
+   }
+}
+/* join us */
+.join-us {
+   background-color: #f3f3f3;
+   p {
+      font-size: var(--para2-size);
+   }
+}
+/* confiance  */
+.confiance {
+   background-image: url("../assets/img/home/back-qui-nous-font-confiance.png");
+   p {
+      font-size: var(--para3-size);
+   }
+   .face-image {
+      width: 110px !important;
+      height: 110px !important;
+      border-radius: 50%;
+   }
+   h4 {
+      font-size: var(--h4-size);
+      font-family: "arial nova bold";
+      color: white;
+   }
+}
+.quet-image {
+   width: 30px !important;
+}
+.font-confiance {
+   position: relative;
+   .owl-nav {
+      position: absolute;
+      top: 50%;
+      padding: 0;
+      width: 100%;
+      .owl-prev {
+         float: left;
+         &::before {
+            background-color: transparent !important;
+         }
+      }
+      .owl-next {
+         float: right;
+         &::before {
+            background-color: transparent !important;
+         }
+      }
+   }
+}
+/* notre programme */
+.notre-programme {
+   background-image: url("../assets/img/home/background-contact-notre-programe.jpg");
+   p {
+      font-size: var(--para2-size);
+      line-height: 20px;
+   }
+   .trip-image {
+      background-image: url("../assets/img/home/img-notre-programe.jpg");
+   }
+   h2 {
+      font-family: "arial nova bold";
+   }
+   .trip {
+      a {
+         font-size: var(--h1-size);
+         color: var(--sec-color);
+         font-family: "arial nova bold";
+         border: solid white 5px;
+         padding: 10px;
+         border-radius: 15px;
+      }
+      h3 {
+         font-size: var(--h3-size);
+         color: white;
+         padding-bottom: 23px;
+      }
+   }
+}
+.home-sec-1 {
+   background-image: url("../assets/img/home/chameaux.jpg");
+}
+/* contact section */
+.contact-right-side {
+   background-image: url("../assets/img/home/img-koutobia.png");
+   img {
+      margin-right: 4px;
+      transform: translateY(-4px);
+   }
+   p {
+      font-size: var(--para3-size);
+   }
+}
+.contact-left-side {
+   background-color: white;
+   input,
+   textarea {
+      width: 100%;
+      background: transparent;
+      border: 1px solid #00000082;
+      margin-top: 9px;
+      margin-bottom: 9px;
+      border-radius: 6px;
+      padding: 5px;
+      padding-left: 13px;
+      &:focus {
+         border: 1px solid var(--sec-color);
+         color: var(--sec-color);
+         outline: none;
+      }
+   }
+}
+.contact-sec {
+   border-radius: 10px;
+   padding-top: 40px;
+   overflow: hidden;
+}
+/* footer  */
+.Copyright-text {
+   p {
+      font-size: var(--para3-size);
+   }
+}

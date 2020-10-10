@@ -1,0 +1,13 @@
+footer {
+   background-color: #1f0a12;
+   color: white;
+   a {
+      color: white;
+      &:hover {
+         text-decoration: none;
+      }
+   }
+   p {
+      font-size: var(--para3-size);
+   }
+}

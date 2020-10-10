@@ -1,0 +1,22 @@
+.details-container {
+   position: relative;
+   .details {
+      position: absolute;
+      bottom: 22px;
+      left: 22px;
+      color: white;
+   }
+}
+.activite-2 {
+   .more-details {
+      h2{
+         font-size: var(--h3-size);
+         color: var(--sec-color);
+         font-family: "arial nova bold";
+      }
+      p {
+         font-size: var(--para2-size);
+      }
+      
+   }
+}

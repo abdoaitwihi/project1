@@ -1,0 +1,722 @@
+:root {
+  /* headings */
+  --h1-home: 70px;
+  --h3-home: 24px;
+  --h1-size: 40px;
+  --h2-size: 30px;
+  --h3-size: 20px;
+  --h4-size: 18px;
+  --h5-size: 60px;
+  /* paragraphs */
+  --para1-size: 24px;
+  --para2-size: 16px;
+  --para3-size: 14px;
+  --para4-size: 24px;
+  /* colors */
+  --main-color: #ffffff;
+  --sec-color: #fab518;
+  --light-main-color: #fab6187e;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    /* headings */
+    --h1-home: 40px;
+    --h3-home: 18px;
+    --h1-size: 30px;
+    --h2-size: 20px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 60px;
+    /* paragraphs */
+    --para1-size: 17px;
+    --para2-size: 14px;
+    --para3-size: 13px;
+    --para4-size: 24px;
+  }
+  .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@font-face {
+  font-family: "arial nova";
+  src: url("../assets/fonts/arial_nova/ArialNova.ttf");
+}
+
+@font-face {
+  font-family: "arial nova";
+  src: url("../assets/fonts/arial_nova/ArialNova.eot");
+}
+
+@font-face {
+  font-family: "arial nova";
+  src: url("../assets/fonts/arial_nova/ArialNova.woff");
+}
+
+@font-face {
+  font-family: "arial nova";
+  src: url("../assets/fonts/arial_nova/ArialNova.woff2");
+}
+
+@font-face {
+  font-family: "arial nova bold";
+  src: url("../assets/fonts/arial_nova/ArialNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "arial nova bold";
+  src: url("../assets/fonts/arial_nova/ArialNova-Bold.eot");
+}
+
+@font-face {
+  font-family: "arial nova bold";
+  src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff");
+}
+
+@font-face {
+  font-family: "arial nova bold";
+  src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff2");
+}
+
+@font-face {
+  font-family: "arial nova light";
+  src: url("../assets/fonts/arial_nova/ArialNova-Light.ttf");
+}
+
+@font-face {
+  font-family: "arial nova light";
+  src: url("../assets/fonts/arial_nova/ArialNova-Light.eot");
+}
+
+@font-face {
+  font-family: "arial nova light";
+  src: url("../assets/fonts/arial_nova/ArialNova-Light.woff");
+}
+
+@font-face {
+  font-family: "arial nova light";
+  src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
+}
+
+body,
+div {
+  font-family: "arial nova light";
+}
+
+/* header styling */
+@media only screen and (min-width: 992px) {
+  .languge-button {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.menu_fixed {
+  position: fixed;
+  z-index: 9999 !important;
+  width: 100%;
+  background-color: black;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  top: 0;
+  padding-bottom: 10px !important;
+}
+
+.menu_fixed .navbar-brand img {
+  height: 60px;
+}
+
+.navbar-brand img {
+  width: 90px;
+}
+
+nav ul {
+  border-bottom: solid 1px var(--main-color);
+}
+
+nav ul .nav-link {
+  color: var(--main-color) !important;
+  padding-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 20px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  -webkit-transform: translateY(2.5px);
+          transform: translateY(2.5px);
+  border-bottom: solid 4px transparent;
+}
+
+nav ul .nav-link:hover, nav ul .active a, .active nav ul a {
+  border-bottom: solid 4px var(--sec-color);
+}
+
+header {
+  background: url("../assets/img/home/activite-Tour-en-Montgolfier.png");
+  background-size: 110% 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    background-size: cover;
+  }
+}
+
+.languge-button .btn {
+  color: var(--main-color) !important;
+}
+
+.banner {
+  height: calc(100vh - 50px);
+}
+
+header .btn-home {
+  color: var(--main-color);
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 2px var(--main-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: var(--h3-size);
+}
+
+header .btn-home:hover {
+  border: solid 2px var(--sec-color);
+  color: var(--sec-color);
+}
+
+header h1 {
+  font-size: var(--h1-home);
+  font-family: "arial nova";
+  color: var(--main-color);
+}
+
+header h3 {
+  font-size: var(--h3-home);
+  font-family: "arial nova light";
+  color: var(--main-color);
+}
+
+.no-header-bg {
+  background: white;
+}
+
+.no-header-bg nav ul .nav-link {
+  color: black !important;
+}
+
+.no-header-bg .languge-button button {
+  color: black !important;
+}
+
+.no-header-bg nav ul {
+  border-bottom: solid 1px black;
+}
+
+.no-header-bg .menu_fixed {
+  background-color: white;
+}
+
+.bg-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f0a12), to(#1f0a1270));
+  background: linear-gradient(#1f0a12, #1f0a1270);
+}
+
+.content-video {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  display: inline;
+}
+
+.content-video h4 {
+  font-size: var(--h1-size);
+  font-family: "arial nova bold";
+}
+
+.content-video button {
+  background: none;
+  border: none;
+}
+
+.content-video button img {
+  width: 50px;
+}
+
+.content-video button:focus {
+  outline: none;
+}
+
+#myVideo {
+  position: relative;
+  width: 100%;
+}
+
+button.lire-suite, a.lire-suite {
+  display: block;
+  border: noe;
+  border: none;
+  background: none;
+  margin-top: 10px;
+  border-bottom: solid 1px var(--sec-color);
+  padding-bottom: 10px;
+}
+
+button.lire-suite:focus, a.lire-suite:focus {
+  outline: none;
+}
+
+a.lire-suite {
+  display: inline;
+}
+
+.line-under {
+  position: relative;
+  display: inline;
+  font-family: "arial nova bold";
+}
+
+.line-under::after {
+  content: "";
+  height: 4px;
+  width: 90px;
+  background-color: var(--sec-color);
+  display: block;
+  margin-top: 12px;
+  position: absolute;
+  left: 0;
+}
+
+.bg-2 {
+  background-image: url("../assets/img/home/activite-sortie-en-quad.png");
+}
+
+.clean-a img {
+  width: 30px !important;
+  display: inline !important;
+}
+
+.single-offre {
+  height: 430px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.single-offre p {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.single-offre h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.single-offre a {
+  color: white;
+  font-size: 14px;
+  border: solid 1px white;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+  padding-right: 9px;
+  border-radius: 42px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.single-offre a:hover {
+  border: solid 1px var(--sec-color);
+  color: var(--sec-color);
+  text-decoration: none;
+}
+
+.single-offre:hover .overlay {
+  opacity: 1;
+}
+
+.owl-top .single-offre {
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#706868), to(rgba(0, 0, 0, 0.349)));
+  background: linear-gradient(#706868, rgba(0, 0, 0, 0.349));
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/* join us */
+.join-us {
+  background-color: #f3f3f3;
+}
+
+.join-us p {
+  font-size: var(--para2-size);
+}
+
+/* confiance  */
+.confiance {
+  background-image: url("../assets/img/home/back-qui-nous-font-confiance.png");
+}
+
+.confiance p {
+  font-size: var(--para3-size);
+}
+
+.confiance .face-image {
+  width: 110px !important;
+  height: 110px !important;
+  border-radius: 50%;
+}
+
+.confiance h4 {
+  font-size: var(--h4-size);
+  font-family: "arial nova bold";
+  color: white;
+}
+
+.quet-image {
+  width: 30px !important;
+}
+
+.font-confiance {
+  position: relative;
+}
+
+.font-confiance .owl-nav {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  width: 100%;
+}
+
+.font-confiance .owl-nav .owl-prev {
+  float: left;
+}
+
+.font-confiance .owl-nav .owl-prev::before {
+  background-color: transparent !important;
+}
+
+.font-confiance .owl-nav .owl-next {
+  float: right;
+}
+
+.font-confiance .owl-nav .owl-next::before {
+  background-color: transparent !important;
+}
+
+/* notre programme */
+.notre-programme {
+  background-image: url("../assets/img/home/background-contact-notre-programe.jpg");
+}
+
+.notre-programme p {
+  font-size: var(--para2-size);
+  line-height: 20px;
+}
+
+.notre-programme .trip-image {
+  background-image: url("../assets/img/home/img-notre-programe.jpg");
+}
+
+.notre-programme h2 {
+  font-family: "arial nova bold";
+}
+
+.notre-programme .trip a {
+  font-size: var(--h1-size);
+  color: var(--sec-color);
+  font-family: "arial nova bold";
+  border: solid white 5px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.notre-programme .trip h3 {
+  font-size: var(--h3-size);
+  color: white;
+  padding-bottom: 23px;
+}
+
+.home-sec-1 {
+  background-image: url("../assets/img/home/chameaux.jpg");
+}
+
+/* contact section */
+.contact-right-side {
+  background-image: url("../assets/img/home/img-koutobia.png");
+}
+
+.contact-right-side img {
+  margin-right: 4px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.contact-right-side p {
+  font-size: var(--para3-size);
+}
+
+.contact-left-side {
+  background-color: white;
+}
+
+.contact-left-side input,
+.contact-left-side textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #00000082;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  border-radius: 6px;
+  padding: 5px;
+  padding-left: 13px;
+}
+
+.contact-left-side input:focus,
+.contact-left-side textarea:focus {
+  border: 1px solid var(--sec-color);
+  color: var(--sec-color);
+  outline: none;
+}
+
+.contact-sec {
+  border-radius: 10px;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* footer  */
+.Copyright-text p {
+  font-size: var(--para3-size);
+}
+
+footer {
+  background-color: #1f0a12;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer p {
+  font-size: var(--para3-size);
+}
+
+.bg-2 {
+  background-image: url("../assets/img/home/img1.png");
+}
+
+.bg-3 {
+  background-image: url("../assets/img/home/img2.png");
+}
+
+.bg-4 {
+  background-image: url("../assets/img/home/img3.png");
+}
+
+.bg-5 {
+  background-image: url("../assets/img/home/img4.png");
+}
+
+.bg-6 {
+  background-image: url("../assets/img/home/img5.png");
+}
+
+.bg-7 {
+  background-image: url("../assets/img/home/activit-esoiree-jemaa-el-fna.png");
+}
+
+.bg-8 {
+  background-image: url("../assets/img/home/activite-sortie-en-quad.png");
+}
+
+.bg-9 {
+  background-image: url("../assets/img/home/activite-Tour-en-Montgolfier.png");
+}
+
+.bg-10 {
+  background-image: url("../assets/img/home/activite-trip-to-atlas.png");
+}
+
+.bg-11 {
+  background-image: url("../assets/img/home/activite-Visite-de-villages-et-randonnees.png");
+}
+
+.bg-12 {
+  background-image: url("../assets/img/decouvrir/img-decouvrir-notre-agence.jpg");
+}
+
+.bg-13 {
+  background-image: url("../assets/img/activite/img-activite-que-nous-offrons.jpg");
+}
+
+.my-banner {
+  height: calc(100vh - 50px);
+}
+
+.my-banner h1 {
+  font-family: "arial nova bold";
+}
+
+.decouvrir h1 {
+  font-size: var(--h1-home);
+}
+
+.decouvrir-2 .content-video {
+  top: 20%;
+}
+
+.details-container {
+  position: relative;
+}
+
+.details-container .details {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  color: white;
+}
+
+.activite-2 .more-details h2 {
+  font-size: var(--h3-size);
+  color: var(--sec-color);
+  font-family: "arial nova bold";
+}
+
+.activite-2 .more-details p {
+  font-size: var(--para2-size);
+}
+
+/* general styling */
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  outline: none;
+}
+
+.dropdown-menu {
+  min-width: unset !important;
+}
+
+.btn dropdown-toggle:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+p {
+  font-size: var(--para1-size);
+}
+
+.bg {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-nav button.owl-prev::before {
+  content: url("../assets/img/home/btn-precedent-activite.png") !important;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  margin-left: 10px;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-next::before, .owl-carousel .owl-nav button.owl-prev::before {
+  content: url("../assets/img/home/btn-suiv-activite.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 251, 5, 0.514);
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-next:focus, .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: var(--sec-color);
+}
+
+.owl-nav {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.primary-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--sec-color);
+  color: white;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: var(--light-main-color);
+  text-decoration: none;
+}
+
+button.primary-btn {
+  border: none;
+}
+
+.bg-responsive {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,191 @@
+:root {
+   /* headings */
+   --h1-home: 70px;
+   --h3-home: 24px;
+   --h1-size: 40px;
+   --h2-size: 30px;
+   --h3-size: 20px;
+   --h4-size: 18px;
+   --h5-size: 60px;
+   /* paragraphs */
+   --para1-size: 24px;
+   --para2-size: 16px;
+   --para3-size: 14px;
+   --para4-size: 24px;
+   /* colors */
+   --main-color: #ffffff;
+   --sec-color: #fab518;
+   --light-main-color: #fab6187e;
+}
+@media only screen and (max-width: 1024px) {
+   :root {
+      /* headings */
+      --h1-home: 40px;
+      --h3-home: 18px;
+      --h1-size: 30px;
+      --h2-size: 20px;
+      --h3-size: 20px;
+      --h4-size: 16px;
+      --h5-size: 60px;
+      /* paragraphs */
+      --para1-size: 17px;
+      --para2-size: 14px;
+      --para3-size: 13px;
+      --para4-size: 24px;
+   }
+   .first {
+      order: 1;
+   }
+   .second {
+      order: 2;
+   }
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.ttf");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.eot");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.woff");
+}
+@font-face {
+   font-family: "arial nova";
+   src: url("../assets/fonts/arial_nova/ArialNova.woff2");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.ttf");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.eot");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff");
+}
+@font-face {
+   font-family: "arial nova bold";
+   src: url("../assets/fonts/arial_nova/ArialNova-Bold.woff2");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.ttf");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.eot");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.woff");
+}
+@font-face {
+   font-family: "arial nova light";
+   src: url("../assets/fonts/arial_nova/ArialNova-Light.woff2");
+}
+body,
+div {
+   font-family: "arial nova light";
+}
+
+/* header styling */
+@import "header";
+@import "home";
+@import "footer";
+@import "bg";
+@import "decouvrir";
+@import "activite";
+/* general styling */
+.navbar-dark .navbar-toggler {
+   border: none;
+   &:focus {
+      outline: none;
+   }
+}
+.dropdown-menu {
+   min-width: unset !important;
+}
+.btn dropdown-toggle {
+   &:focus {
+      outline: none;
+      box-shadow: none;
+   }
+}
+.btn:focus {
+   box-shadow: none;
+}
+
+h2 {
+   font-size: var(--h2-size);
+}
+p {
+   font-size: var(--para1-size);
+}
+.bg {
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+.owl-carousel .owl-nav button.owl-prev {
+   @extend button.owl-next;
+   &::before {
+      content: url("../assets/img/home/btn-precedent-activite.png") !important;
+   }
+}
+.owl-carousel .owl-nav button.owl-next {
+   &::before {
+      content: url("../assets/img/home/btn-suiv-activite.png");
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(235, 251, 5, 0.514);
+      border-radius: 50%;
+   }
+   position: relative;
+   width: 34px;
+   height: 34px;
+   margin-left: 10px;
+   z-index: 1;
+   transition: 0.2s;
+
+   &:focus {
+      outline: none;
+   }
+   &:hover {
+      background-color: var(--sec-color);
+   }
+   border-radius: 50%;
+}
+
+.owl-nav {
+   text-align: center;
+   padding-top: 50px;
+}
+
+.primary-btn {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 20px;
+   padding-left: 20px;
+   background-color: var(--sec-color);
+   color: white;
+   border-radius: 20px;
+   transition: 0.3s;
+   &:hover {
+      background-color: var(--light-main-color);
+      text-decoration: none;
+   }
+}
+button.primary-btn {
+   border: none;
+}
+.bg-responsive {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
