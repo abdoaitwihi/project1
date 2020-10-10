@@ -136,7 +136,8 @@ div {
 }
 
 .navbar-brand img {
-  width: 90px;
+  height: 60px;
+  width: auto;
 }
 
 nav ul {
@@ -263,6 +264,7 @@ header h3 {
 #myVideo {
   position: relative;
   width: 100%;
+  outline: none;
 }
 
 button.lire-suite, a.lire-suite {
