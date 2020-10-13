@@ -2,7 +2,7 @@
    <div class="container">
       <div class="row">
          <div class="col-sm-6 col-md-4 col-lg-3 mb-5 text-center">
-            <img src="./assets/img/home/logo-ya-ray7.png" alt="" />
+            <img src="./assets/img/home/logo-ya-ray7.png" width="100px" alt="" />
          </div>
          <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
             <div class="col-12 px-0">

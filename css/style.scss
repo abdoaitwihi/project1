@@ -16,6 +16,7 @@
    --main-color: #ffffff;
    --sec-color: #fab518;
    --light-main-color: #fab6187e;
+   --third-color: #EE7425;
 }
 @media only screen and (max-width: 1024px) {
    :root {
@@ -100,6 +101,9 @@ div {
 @import "bg";
 @import "decouvrir";
 @import "activite";
+@import "dec-pro";
+@import "co-generales";
+@import "stepper";
 /* general styling */
 .navbar-dark .navbar-toggler {
    border: none;
@@ -188,4 +192,7 @@ button.primary-btn {
 .bg-responsive {
    background-size: cover;
    background-repeat: no-repeat;
+}
+.my-banner h1 {
+   font-size: var(--h1-home);
 }

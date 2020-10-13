@@ -1,0 +1,32 @@
+.dec-pro {
+  p {
+    font-size: var(--para3-size);
+  }
+  h3 {
+    font-size: calc(var(--para3-size) + 2px);
+    font-family: "arial nova bold";
+  }
+  .back-orange {
+    background-color: var(--third-color);
+    color: white;
+  }
+  .step {
+    cursor: pointer;
+  }
+  .div-step-image {
+    position: relative;
+    .sec-image-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      img {
+        height: 70%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.orange-border {
+  border: solid var(--third-color) 1px ;
+}

@@ -153,18 +153,7 @@ $active = 'home';
          <div class="text-center">
             <h2 class="line-under">Let’s get started / Join us</h2>
          </div>
-         <h3 class="pt-5 mt-md-3">Comment réserver ? en 3 étapes</h3>
-         <div class="row">
-            <div class="col-md-5 my-3">
-               <p>
-                  Inpendio indignitatis formidatam haut extrusis inopiam
-                  dudum est paucis ab id totidemque veri disciplinarum
-                  sectatoribus milia dudum sine ab interpellata dudum quidem
-                  ut ad peregrini tenerentur magistris ad cum choris.
-               </p>
-            </div>
-         </div>
-         <a href="" class="primary-btn">Réserver</a>
+         <?php include "./includes/reserver.php"?>
       </div>
    </section>
    <section class="container-fluid py-5 confiance bg">
@@ -302,14 +291,14 @@ $active = 'home';
                   suae dispendium existimans factum aut cogitatum, insontium
                   caedibus fecit victoriam luctuosam.
                </p>
-               <div class="row">
+               <div id="contact-us" class="row">
                   <a href="" class="primary-btn mx-3 my-1">Télécharger la brochure</a>
 
-                  <a href="" class="primary-btn mx-3 my-1">Télécharger la brochure</a>
+                  <a href="" class="primary-btn mx-3 my-1">Voir le programme détaillé</a>
                </div>
             </div>
          </div>
-         <div class="py-4"></div>
+         <div class=" py-4"></div>
          <div class="text-center pb-3">
             <h2 class="line-under">Contact Us</h2>
          </div>
@@ -319,31 +308,38 @@ $active = 'home';
                <form action="">
                   <div class="row">
                      <div class="col-md-6">
-                        <input type="text" name="fname" class="costum-input" placeholder="Nom" />
+                        <input type="text" name="name" id="name" class="costum-input" placeholder="Nom" />
                      </div>
                      <div class="col-md-6">
-                        <input type="text" name="email" class="costum-input" placeholder="Email" />
+                        <input type="text" name="email" id="email" class="costum-input" placeholder="Email" />
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-12">
-                        <input type="text" name="subject" class="costum-input" placeholder="Sujet" />
+                        <input type="text" name="subject" id="subject" class="costum-input" placeholder="Sujet" />
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-12">
-                        <textarea class="costum-text-area" name="message" id="" cols="30" rows="10"
+                        <textarea class="costum-text-area" name="message" id="message" cols="30" rows="10"
                            placeholder="Message"></textarea>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-12">
-                        <button type="submit" class="primary-btn">
+                        <button type="submit" id="envoyer" class="primary-btn">
                            Envoyez le message
                         </button>
+                        <div class="spinner-border float-right mr-3" role="status">
+                           <span class="sr-only">Loading...</span>
+                        </div>
                      </div>
                   </div>
                </form>
+               <div class="row mx-auto col-md-10 mt-2">
+                  <div class="col-12 alert alert-success" id="succes"></div>
+                  <div class="col-12 alert alert-danger" id="erreur"></div>
+               </div>
             </div>
             <div class="col-lg-5 row mx-0 contact-right-side bg p-4 text-white">
                <div class="col-12">
@@ -381,9 +377,61 @@ $active = 'home';
    </section>
    <?php include "./includes/footer.php"?>
    <?php include "./includes/scripts.php"?>
-
-
    <script src="./js/video.js"></script>
+   <script>
+      $("#succes").css("display", "none");
+      $("#erreur").css("display", "none");
+      $(".spinner-border").hide();
+      $("#envoyer").click(function (e) {
+         e.preventDefault();
+         $("#envoyer").attr("disabled", true);
+         $("#envoyer").css("cursor", "not-allowed");
+         $(".spinner-border").show();
+         $("#succes").css("display", "none");
+         $("#erreur").css("display", "none");
+         $.ajax({
+            type: "POST",
+            url: "./contact_process.php",
+            datatype: "json",
+            async: false,
+            data: {
+               Param_name: $("#name").val(),
+               Param_email: $("#email").val(),
+               Param_subject: $("#subject").val(),
+               Param_message: $("#message").val(),
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+               if (
+                  typeof console == "object" &&
+                  typeof console.log == "function"
+               ) {
+                  console.log(jqXHR);
+                  console.log(textStatus);
+                  console.log(errorThrown);
+               }
+            },
+            success: function (response) {
+               //var myJSON = JSON.stringify(response);
+               console.log(response.message);
+               console.log(response.succes);
+               console.log(response.succes);
+               $("#envoyer").attr("disabled", false);
+               $("#envoyer").css("cursor", "");
+               $(".spinner-border").hide();
+
+               if (response.succes) {
+                  $("#succes").html(response.message);
+                  $("#succes").css("display", "block");
+                  $("input").val("");
+                  $("textarea").val("");
+               } else {
+                  $("#erreur").html(response.message);
+                  $("#erreur").css("display", "block");
+               }
+            },
+         });
+      });
+   </script>
 
 </body>
 

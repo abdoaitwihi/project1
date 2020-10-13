@@ -208,7 +208,11 @@ a.lire-suite {
 .contact-left-side {
    background-color: white;
    input,
-   textarea {
+   textarea,
+   select {
+      &[type="checkbox"] {
+         width: unset;
+      }
       width: 100%;
       background: transparent;
       border: 1px solid #00000082;

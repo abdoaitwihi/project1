@@ -28,7 +28,11 @@
             </div>
          </div>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <?php if($active == "home") { ?>
             <img src="./assets/img/menu-icon.png" width="30px" alt="" />
+            <?php }else { ?>
+            <img src="./assets/img/menu-icon-black.png" width="30px" alt="" />
+            <?php } ?>
          </button>
 
          <!-- Navbar links -->
@@ -46,14 +50,14 @@
                <li class="nav-item <?php  if($active == 'december-project') echo 'active'?>">
                   <a class="nav-link" href="./december-project.php">December project </a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Join us </a>
+               <li class="nav-item <?php  if($active == 'join-us') echo 'active'?>">
+                  <a class="nav-link" href="./join-us.php">Join us </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us </a>
+                  <a class="nav-link" href="./index.php#contact-us">Contact us </a>
                </li>
-               <li class="nav-item d-lg-none d-xl-block">
-                  <a class="nav-link" href="#">Conditions générales
+               <li class="nav-item d-lg-none d-xl-block <?php  if($active == 'condition-generales') echo 'active'?>">
+                  <a class="nav-link" href="./condition-generales.php">Conditions générales
                   </a>
                </li>
             </ul>

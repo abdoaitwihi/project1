@@ -1,0 +1,19 @@
+.my-tabs {
+  .nav-tabs{
+    border: none;
+  }
+  .nav-tabs .nav-link{
+    border: none;
+  }
+  .nav-tabs .nav-link.active {
+    border-bottom: solid 3px var(--third-color);
+  }
+  a {
+    font-family: "arial nova bold";
+    color: black;
+    font-size: var(--h4-size);
+  }
+  p {
+    font-size: var(--para2-size);
+  }
+}

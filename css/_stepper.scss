@@ -1,0 +1,22 @@
+.stepwizard-row {
+  a {
+    background-color: #EAEAEA;
+    border:  none !important;
+    font-family: "arial nova bold";
+    font-size: 20px;
+  }
+  .btn-success {
+    background-color: var(--sec-color) !important;
+
+  }
+}
+.setup-content {
+  td {
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: var(--para2-size);
+  }
+}

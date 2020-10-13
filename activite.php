@@ -57,7 +57,7 @@ $active = 'activite';
       </div>
       <div class="row mt-2">
         <div class="col-lg-6 p-2 details-container">
-          <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+          <img src="./assets/img/activite/marrakech.jpg" class="w-100 h-100" alt="">
           <div class="details">
             <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
             MARRAKECH <br>
@@ -85,11 +85,11 @@ $active = 'activite';
       </div>
       <div class="row mt-2">
         <div class="col-lg-6 p-2 details-container">
-          <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+          <img src="./assets/img/activite/restaurants-de-marrakech.png" class="w-100 h-100" alt="">
           <div class="details">
             <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
             MARRAKECH <br>
-            <img src="./assets/img/activite/icon-Tour-en-Montgolfiere.png" alt="" class="d-inline mr-1">
+            <img src="./assets/img/activite/icon-restaurants- de-marrakech.png" alt="" class="d-inline mr-1">
             restaurants de marrakech (Epicurien)
           </div>
         </div>
@@ -116,11 +116,11 @@ $active = 'activite';
       <div id="demo" class="conatiner-fluid collapse">
         <div class="row mt-2">
           <div class="col-lg-6 p-2 details-container">
-            <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+            <img src="./assets/img/activite/Sortie-en-quad-dans-le-desert.png" class="w-100 h-100" alt="">
             <div class="details">
               <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
               MARRAKECH désert <br>
-              <img src="./assets/img/activite/icon-Tour-en-Montgolfiere.png" alt="" class="d-inline mr-1">
+              <img src="./assets/img/activite/icon-quad.png" alt="" class="d-inline mr-1">
               Sortie en quad dans le désert
             </div>
           </div>
@@ -148,11 +148,11 @@ $active = 'activite';
         </div>
         <div class="row mt-2">
           <div class="col-lg-6 p-2 details-container">
-            <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+            <img src="./assets/img/activite/Visite-de-vllages.png" class="w-100 h-100" alt="">
             <div class="details">
               <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
               LES VILLAGES DU MARRAKECH <br>
-              <img src="./assets/img/activite/icon-Tour-en-Montgolfiere.png" alt="" class="d-inline mr-1">
+              <img src="./assets/img/activite/icon-village.png" alt="" class="d-inline mr-1">
               Visite de villages et randonnées
             </div>
           </div>
@@ -180,11 +180,11 @@ $active = 'activite';
         </div>
         <div class="row mt-2">
           <div class="col-lg-6 p-2 details-container">
-            <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+            <img src="./assets/img/activite/Trip-au-Grand-Atlas.png" class="w-100 h-100" alt="">
             <div class="details">
               <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
               ATLAS MONTAGNE <br>
-              <img src="./assets/img/activite/icon-Tour-en-Montgolfiere.png" alt="" class="d-inline mr-1">
+              <img src="./assets/img/activite/icon-montagne-atlas.png" alt="" class="d-inline mr-1">
               trip au grand atlas
             </div>
           </div>
@@ -202,11 +202,11 @@ $active = 'activite';
         </div>
         <div class="row mt-2">
           <div class="col-lg-6 p-2 details-container">
-            <img src="./assets/img/activite/Tour-en-Montgolfiere.png" class="w-100 h-100" alt="">
+            <img src="./assets/img/activite/Tour-dans-le-circuit-de-la-Palmeraie.png" class="w-100 h-100" alt="">
             <div class="details">
               <img src="./assets/img/activite/icon-maps.png" alt="" class="d-inline mr-1">
               Palm Grove Marrakech <br>
-              <img src="./assets/img/activite/icon-Tour-en-Montgolfiere.png" alt="" class="d-inline mr-1">
+              <img src="./assets/img/activite/icon-palm.png" alt="" class="d-inline mr-1">
               Tour en dromadaire dans le circuit de la Palmeraie
             </div>
           </div>
