@@ -18,8 +18,13 @@ $(document).ready(function () {
 
     }
   });
-
+  function scrollToTopOfForm() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#elementtoScrollToID").offset().top - 50
+    }, 300);
+  }
   allNextBtn.click(function () {
+    scrollToTopOfForm();
     if ($(this).hasClass("get-data")) {
 
       if (!$('#terms').is(":checked")) {
@@ -107,6 +112,7 @@ $(document).ready(function () {
     if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
   });
   $(".prevBtn").click(function () {
+    scrollToTopOfForm();
     var curStep = $(this).closest(".setup-content"),
       curStepBtn = curStep.attr("id"),
       nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a"),

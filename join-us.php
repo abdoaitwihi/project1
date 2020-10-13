@@ -21,7 +21,7 @@ $active = 'join-us';
       </div>
     </div>
   </section>
-  <section class="container-fluid py-5">
+  <section id="elementtoScrollToID" class="container-fluid py-5">
     <div class="container">
       <div class="text-center">
         <h2 class="line-under mx-auto ">
@@ -66,17 +66,16 @@ $active = 'join-us';
                 </select>
               </div>
               <div class="col-12">
-                <label for="terms">
-                  <input type="checkbox" name="terms" id="terms">
-                  accepter termes et conditions
+                <label for="terms" class="d-block mb-0">
+                  <input type="checkbox" name="terms" class="mb-0" id="terms">
+                  Accepter termes et conditions
                 </label>
-                <span id="must-check" class="d-none text-danger">you must accept the terms</span>
+                <span id="must-check" class="d-none text-danger">You must accept the terms</span>
               </div>
             </div>
             <button class="btn get-data nextBtn float-right" type="button">Continuez <img
                 src="./assets/img/join-us/flesh-suivant.png" class="d-inline ml-2" height="15px" alt=""></button>
           </div>
-
           <div class="panel panel-primary setup-content" id="step-2">
             <h4 class="pt-5">Vos informations personnels confoemtation</h4>
             <h4>please confirm</h4>
@@ -135,12 +134,12 @@ $active = 'join-us';
           </div>
           <div class="panel panel-primary setup-content" id="step-3">
             <div class="container">
-              <h4 class="py-4">paiment enskdjla</h4>
+              <h4 class="py-4">Paiment details</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut. Lorem ipsum dolor sit amet consectetur,
                 adipisicing elit. Ipsa voluptatum et quos.
               </p>
-              <p class="py-3 text-danger">paiment is made via lankey</p>
+              <p class="py-3 text-danger">Paiment is made via lankey</p>
             </div>
 
             <button class="btn  prevBtn float-left" type="button"><img src="./assets/img/join-us/flesh-precedent.png"
@@ -158,7 +157,7 @@ $active = 'join-us';
               </div>
               <div class="col md-6 mx-auto d-none text-center text-danger" id="error-message">
                 <h2>something is wrong</h2>
-                <p>please refresh the page and try again </p>
+                <p> </p>
               </div>
               <div class="col md-6 mx-auto text-center text-success" id="loading">
                 <p>plesae wait ... </p>

@@ -43,10 +43,10 @@ if (empty($subject)) {
 if ($ok) {
 
     $myemail = $my_email;
-    $emailSubject = 'New contact from yarayh.com';
-    $emailMessage = "<strong>$name</strong> , <strong>$email</strong>  contacted you via yarayh.com   ";
+    $emailSubject = 'New contact from'.$domainName;
+    $emailMessage = "<strong>$name</strong> , <strong>$email</strong>  contacted you via $domainName   ";
     $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'From: yarayh.com' . "\r\n";
+    $headers .= 'From: '.$domainName. "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     /* mail($myemail, $emailSubject, $emailMessage, $headers); */
  
@@ -56,7 +56,7 @@ if ($ok) {
     if ($link->query($sql)) {
         # code...
         $ok = 1 ;
-        $messageInfo .= "<li>Votre message a été envoyer avec succes , on vas te contacter tres rapidement</li>";
+        $messageInfo .= "<li>$successMessageSend</li>";
     }
     else {
         echo("Error description: " . $link -> error);

@@ -294,7 +294,7 @@ $active = 'home';
                <div id="contact-us" class="row">
                   <a href="" class="primary-btn mx-3 my-1">Télécharger la brochure</a>
 
-                  <a href="" class="primary-btn mx-3 my-1">Voir le programme détaillé</a>
+                  <a href="./december-project.php" class="primary-btn mx-3 my-1">Voir le programme détaillé</a>
                </div>
             </div>
          </div>

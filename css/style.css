@@ -455,7 +455,7 @@ a.lire-suite {
   font-size: var(--h1-size);
   color: var(--sec-color);
   font-family: "arial nova bold";
-  border: solid white 5px;
+  border: solid white 3px;
   padding: 10px;
   border-radius: 15px;
 }
