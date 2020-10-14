@@ -336,7 +336,7 @@ $active = 'home';
                      </div>
                   </div>
                </form>
-               <div class="row mx-auto col-md-10 mt-2">
+               <div class="row mx-auto col-md-12 mt-2">
                   <div class="col-12 alert alert-success" id="succes"></div>
                   <div class="col-12 alert alert-danger" id="erreur"></div>
                </div>
